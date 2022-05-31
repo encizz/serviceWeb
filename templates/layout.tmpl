@@ -1,0 +1,38 @@
+{{ define "layout.tmpl" }}<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>{{ .Title }}</title>
+    </head>
+    <body>
+    <table>
+    <thead>
+        <tr>
+            <th colspan="2">localisation</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>{{ .Name }}</td>
+        </tr>
+        <tr>
+            <td><time>{{ .Created }}</time></td>
+        </tr>
+        <tr>
+            <td>{{ .Dimension }}</td>
+        </tr>
+        <tr>
+            <td>{{ .Residents }}</td>
+        </tr>
+        <tr>
+            <td>{{ .Type }}</td>
+        </tr>
+        <tr>
+            <td><a href="{{ .URL }}">URL</a></li></td>
+        </tr>
+    </tbody>
+</table>
+    </body>
+</html>
+{{ end }}
+
